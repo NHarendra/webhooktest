@@ -85,7 +85,7 @@ app.get("/webhook", (req, res) => {
 app.post("/webhook", (req, res) => {
   let body = req.body;
   console.log('Webhook Called By Harendra');
-  console.log(body);
+  
   console.log(`\u{1F7EA} Received webhook:`);
   console.dir(body, { depth: null });
 
@@ -151,6 +151,7 @@ app.post("/webhook", (req, res) => {
     console.warn(`Unrecognized POST to webhook.`);
     res.sendStatus(404);
   }
+  console.log(res);
 });
 
 // Verify that the callback came from Facebook.
