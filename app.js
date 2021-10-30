@@ -85,6 +85,7 @@ app.get("/webhook", (req, res) => {
 app.post("/webhook", (req, res) => {
   let body = req.body;
   console.log('Webhook Called By Harendra');
+  console.log(body);
   console.log(`\u{1F7EA} Received webhook:`);
   console.dir(body, { depth: null });
 
