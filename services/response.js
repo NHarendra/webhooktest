@@ -26,7 +26,7 @@ module.exports = class Response {
         payload: quickReply["payload"]
       });
     }
-
+    console.log("Respnse Service genQuickReply : "+response);
     return response;
   }
 
@@ -47,7 +47,7 @@ module.exports = class Response {
     let response = {
       text: text
     };
-
+    console.log("Respnse Service genText : "+response);
     return response;
   }
 
@@ -57,7 +57,7 @@ module.exports = class Response {
       title: title,
       payload: payload
     };
-
+    console.log("Respnse Service genPostbackButton : "+response);
     return response;
   }
 
@@ -78,7 +78,7 @@ module.exports = class Response {
         }
       }
     };
-
+    console.log("Respnse Service genGenericTemplate : "+response);
     return response;
   }
 
