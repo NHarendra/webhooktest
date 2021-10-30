@@ -151,7 +151,7 @@ app.post("/webhook", (req, res) => {
     console.warn(`Unrecognized POST to webhook.`);
     res.sendStatus(404);
   }
-  console.log(res);
+  //console.log(res);
 });
 
 // Verify that the callback came from Facebook.
